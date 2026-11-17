@@ -7,16 +7,18 @@ An end-to-end Joiner-Mover-Leaver (JML) automation solution built on the Now Pla
 
 ## 🏗️ Solution Architecture & Workflow
 
-[Service Portal (/sp)]
-│  Submits "New Employee Onboarding Portal Request"
-▼
+```text
+[Service Portal (/sp)] 
+   │  Submits "New Employee Onboarding Portal Request"
+   ▼
 [HR Onboarding Request (x_2317706_enterp_0_hr_req)]
-│  Triggers After-Insert Business Rule
-▼
+   │  Triggers After-Insert Business Rule
+   ▼
 [OnboardingAssetEngine (Script Include)]
-├──► 1. Hardware Stockroom (x_2317706_enterp_0_hw_stock) ──► Matches Location & Reserves "In Stock" Asset
-├──► 2. Software Entitlement (x_2317706_enterp_0_sw_entl) ──► Validates License Pool & Increments Allocated Rights
-└──► 3. Global CMDB (cmdb_ci_computer) ─────────────────────► Creates Configuration Item & Binds to Employee
+   ├──► 1. Hardware Stockroom (x_2317706_enterp_0_hw_stock) ──► Matches Location & Reserves "In Stock" Asset
+   ├──► 2. Software Entitlement (x_2317706_enterp_0_sw_entl) ──► Validates License Pool & Increments Allocated Rights
+   └──► 3. Global CMDB (cmdb_ci_computer) ─────────────────────► Creates Configuration Item & Binds to Employee
+```
 
 
 ### Offboarding Reclamation Flow
