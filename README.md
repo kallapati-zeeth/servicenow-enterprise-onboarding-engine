@@ -50,3 +50,18 @@ An end-to-end Joiner-Mover-Leaver (JML) automation solution built on the Now Pla
 2. **Hardware Allocation:** Verified `MacBook Pro 16 M3` (`SN-BLR-001`) transitioned automatically from `in_stock` to `allocated` and linked to `Abel Tuter`.
 3. **Software Compliance:** Verified `ServiceNow Studio` entitlement pool incremented `Allocated Rights` from `0` to `1`.
 4. **CMDB Synchronization:** Verified new CI `MacBook Pro 16 M3` populated in `cmdb_ci_computer` with accurate serial number and user assignment.
+---
+
+## 📸 Implementation Proof & Screenshots
+
+### 1. Service Portal Intake Form (`/sp`)
+![Service Portal Request](portal_request.png)
+
+### 2. Automated Hardware Allocation (`x_2317706_enterp_0_hw_stock`)
+![Hardware Stockroom](hardware_allocated.png)
+
+### 3. Software License Compliance Tracking (`x_2317706_enterp_0_sw_entl`)
+![Software Entitlements](software_entitlements.png)
+
+### 4. Global CMDB Synchronization (`cmdb_ci_computer`)
+![CMDB Configuration Item](cmdb_ci_computer.png)
